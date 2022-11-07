@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,61 +47,106 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Caso1.cs">
+    <Compile Include="PracticaMetodos\Caso1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Caso1.Designer.cs">
+    <Compile Include="PracticaMetodos\Caso1.Designer.cs">
       <DependentUpon>Caso1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Caso2.cs">
+    <Compile Include="PracticaVectores\Caso1Vec.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Caso2.Designer.cs">
+    <Compile Include="PracticaVectores\Caso1Vec.Designer.cs">
+      <DependentUpon>Caso1Vec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticaMetodos\Caso2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticaMetodos\Caso2.Designer.cs">
       <DependentUpon>Caso2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Caso3.cs">
+    <Compile Include="PracticaMetodos\Caso3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Caso3.Designer.cs">
+    <Compile Include="PracticaMetodos\Caso3.Designer.cs">
       <DependentUpon>Caso3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Caso4.cs">
+    <Compile Include="PracticaMetodos\Caso4.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Caso4.Designer.cs">
+    <Compile Include="PracticaMetodos\Caso4.Designer.cs">
       <DependentUpon>Caso4.cs</DependentUpon>
     </Compile>
-    <Compile Include="Caso5.cs">
+    <Compile Include="PracticaMetodos\Caso5.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Caso5.Designer.cs">
+    <Compile Include="PracticaMetodos\Caso5.Designer.cs">
       <DependentUpon>Caso5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Caso6.cs">
+    <Compile Include="PracticaMetodos\Caso6.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Caso6.Designer.cs">
+    <Compile Include="PracticaMetodos\Caso6.Designer.cs">
       <DependentUpon>Caso6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticaVectores\Caso2Vec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticaVectores\Caso2Vec.Designer.cs">
+      <DependentUpon>Caso2Vec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticaVectores\Caso3Vec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticaVectores\Caso3Vec.Designer.cs">
+      <DependentUpon>Caso3Vec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticaVectores\Caso4Vec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticaVectores\Caso4Vec.Designer.cs">
+      <DependentUpon>Caso4Vec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticaVectores\Caso5Vec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticaVectores\Caso5Vec.Designer.cs">
+      <DependentUpon>Caso5Vec.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Caso1.resx">
+    <EmbeddedResource Include="PracticaMetodos\Caso1.resx">
       <DependentUpon>Caso1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Caso2.resx">
+    <EmbeddedResource Include="PracticaMetodos\Caso2.resx">
       <DependentUpon>Caso2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Caso3.resx">
+    <EmbeddedResource Include="PracticaMetodos\Caso3.resx">
       <DependentUpon>Caso3.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Caso4.resx">
+    <EmbeddedResource Include="PracticaMetodos\Caso4.resx">
       <DependentUpon>Caso4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Caso5.resx">
+    <EmbeddedResource Include="PracticaMetodos\Caso5.resx">
       <DependentUpon>Caso5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Caso6.resx">
+    <EmbeddedResource Include="PracticaMetodos\Caso6.resx">
       <DependentUpon>Caso6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticaVectores\Caso1Vec.resx">
+      <DependentUpon>Caso1Vec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticaVectores\Caso2Vec.resx">
+      <DependentUpon>Caso2Vec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticaVectores\Caso3Vec.resx">
+      <DependentUpon>Caso3Vec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticaVectores\Caso4Vec.resx">
+      <DependentUpon>Caso4Vec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticaVectores\Caso5Vec.resx">
+      <DependentUpon>Caso5Vec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,5 +170,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

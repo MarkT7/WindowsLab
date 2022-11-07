@@ -17,7 +17,7 @@ namespace WindowsLab
             InitializeComponent();
         }
 
-        private void btnEdad_Click(object sender, EventArgs e)
+        private string CalcularEdad()
         {
             string Nombre = txtNombre.Text;
             string Apellido = txtApellido.Text;
@@ -25,7 +25,11 @@ namespace WindowsLab
             DateTime FechaActual = DateTime.Today;
             int Edad = FechaActual.Year - AñoNacimiento;
 
-            MessageBox.Show(Nombre + " " + Apellido + " tiene " + Edad + " años de edad");
+            return(Nombre + " " + Apellido + " tiene " + Edad + " años de edad");
+        }
+        private void btnEdad_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(CalcularEdad());
         }
     }
 }

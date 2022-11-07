@@ -17,28 +17,40 @@ namespace WindowsLab
             InitializeComponent();
         }
 
-        private void btnRectangulo_Click(object sender, EventArgs e)
-        {
+        private string RectanguloArea() {
             int Base = Int16.Parse(txtBaseODiametro.Text);
             int Altura = Int16.Parse(txtAltura.Text);
 
-            MessageBox.Show("El Area del rectangulo es " + Base*Altura);
+            return("El Area del rectangulo es " + Base * Altura);
+        }
+
+        private string TrianguloArea() {
+            int Base = Int16.Parse(txtBaseODiametro.Text);
+            int Altura = Int16.Parse(txtAltura.Text);
+
+            return("El Area del triangulo es " + Base * Altura / 2);
+        }
+
+        private string CirculoArea() {
+            double Diametro = Double.Parse(txtBaseODiametro.Text);
+            double Area = 3.14 * Math.Pow(Diametro / 2, 2);
+
+            return("El Area del circulo es " + Area);
+        }
+
+        private void btnRectangulo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(RectanguloArea());
         }
 
         private void btnTriangulo_Click(object sender, EventArgs e)
         {
-            int Base = Int16.Parse(txtBaseODiametro.Text);
-            int Altura = Int16.Parse(txtAltura.Text);
-
-            MessageBox.Show("El Area del triangulo es " + Base * Altura/2);
+            MessageBox.Show(TrianguloArea());
         }
 
         private void btnCirculo_Click(object sender, EventArgs e)
         {
-            double Diametro = Double.Parse(txtBaseODiametro.Text);
-            double Area = 3.14 * Math.Pow(Diametro / 2, 2);
-
-            MessageBox.Show("El Area del circulo es " + Area);
+            MessageBox.Show(CirculoArea());
         }
     }
 }

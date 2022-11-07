@@ -1,4 +1,4 @@
-﻿namespace WindowsLab
+﻿namespace WindowsLab.PracticaMetodos
 {
     partial class Caso1
     {

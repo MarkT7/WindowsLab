@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsLab
+namespace WindowsLab.PracticaMetodos
 {
     public partial class Caso1 : Form
     {
@@ -22,13 +22,19 @@ namespace WindowsLab
 
         }
 
-        private void btnArea_Click(object sender, EventArgs e)
-        {
+        private string AreaTriangulo() {
+
             int Base = Int16.Parse(txtBase.Text);
             int Altura = Int16.Parse(txtAltura.Text);
             int Area = Base * Altura;
 
-            MessageBox.Show("El area del rectangulo es " + Area);
+            return ("El area del rectangulo es " + Area);
+
+        }
+
+        private void btnArea_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(AreaTriangulo());
 
         }
     }

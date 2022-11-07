@@ -1,8 +1,13 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsLab.Practica_de_Metodos;
+using WindowsLab.PracticaMetodos;
+using WindowsLab.Practica_de_Vectores;
+using WindowsLab.PracticaVectores;
 
 namespace WindowsLab
 {
@@ -16,7 +21,7 @@ namespace WindowsLab
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Caso6());
+            Application.Run(new Caso5Vec());
         }
     }
 }
